@@ -19,3 +19,16 @@ body {
     top: 0;
     z-index: -1;
 }
+
+.typed-cursor {
+    font-size: 5rem;
+    opacity: 1;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    51% { opacity: 0; }
+    100% { opacity: 0; }
+}
