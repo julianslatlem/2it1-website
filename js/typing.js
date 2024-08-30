@@ -108,7 +108,7 @@ var typed = new Typed('.auto-type', {
     strings: ['rmasjonsteknologi<br>VG2'],
     typeSpeed: 50,
     backSpeed: 50,
-    backDelay: 1000,
+    backDelay: 5000,
     startDelay: 1000,
     loop: true,
     showCursor: true,
