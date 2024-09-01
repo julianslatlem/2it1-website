@@ -1,0 +1,111 @@
+.select-wrap {
+    position: relative;
+    height: 100%;
+    perspective: 1200px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 20px;
+    color: #ddd;
+    &:before, &:after {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 50%;
+    }
+    &:before {
+        top: 0;
+        background-image: linear-gradient(to bottom, rgb(11, 12, 21), rgba(1, 1, 1, 0));
+    }
+    &:after {
+        bottom: 0;
+        background-image: linear-gradient(to top, rgb(11, 12, 21), rgba(1, 1, 1, 0));
+    }
+
+    .select-options {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        transform-style: preserve-3d;
+        margin: 0 auto;
+        margin-left: 20%;
+        text-align: left;
+        display: block;
+        transform: translateZ(-150px) rotateX(0deg);
+        -webkit-font-smoothing: subpixel-antialiased;
+        color: #666;
+        .select-option {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+
+            -webkit-font-smoothing: subpixel-antialiased;
+        }
+    }
+
+    user-select: none;
+}
+
+.highlight {
+    position: absolute;
+    top: 50%;
+    padding-left: 20%;
+    text-align: left;
+    transform: translate(0, -50%);
+    width: 100%;
+    background-color: rgb(11, 12, 21);
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    font-size: 24px;
+    overflow: hidden;
+
+    user-select: none;
+}
+
+.highlight-list {
+    position: absolute;
+    width: 100%;
+}
+
+.countdown-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.countdown {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    text-align: center;
+}
+
+.break-selector {
+    flex: 1;
+    position: relative;
+    perspective: 2000px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 400px;
+    height: 800px;
+
+    >div {
+        flex: 1;
+    }
+
+    .select-wrap {
+        font-size: 80px;
+    }
+
+    .highlight {
+        font-size: 100px;
+    }
+}

@@ -5,6 +5,7 @@
     <title>2IT1</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/countdown.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,10 +36,18 @@
         <section class="countdown-section">
             <h2 class="countdown-title">Hvor lenge igjen til neste ferie?</h2>
             <p class="countdown-text">Så klart, det alle venter på...</p>
+
+            <div class="countdown-row">
+                <div class="break-selector">
+                    <div class="break" id="break1"></div>
+                </div>
+                <div class="countdown" id="countdown">00:00:00:00</div>
+            </div>
         </section>
     </section>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="../js/typing.js"></script>
+    <script src="../js/countdown.js"></script>
 </body>
 </html>
