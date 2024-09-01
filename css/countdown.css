@@ -6,48 +6,49 @@
     overflow: hidden;
     font-size: 20px;
     color: #ddd;
-    &:before, &:after {
-        position: absolute;
-        z-index: 1;
-        display: block;
-        content: "";
-        width: 100%;
-        height: 50%;
-    }
-    &:before {
-        top: 0;
-        background-image: linear-gradient(to bottom, rgb(11, 12, 21), rgba(1, 1, 1, 0));
-    }
-    &:after {
-        bottom: 0;
-        background-image: linear-gradient(to top, rgb(11, 12, 21), rgba(1, 1, 1, 0));
-    }
+}
+.select-wrap:before, .select-wrap:after {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 50%;
+}
+.select-wrap:before {
+    top: 0;
+    background-image: linear-gradient(to bottom, rgb(11, 12, 21), rgba(1, 1, 1, 0));
+}
+.select-wrap:after {
+    bottom: 0;
+    background-image: linear-gradient(to top, rgb(11, 12, 21), rgba(1, 1, 1, 0));
+}
 
-    .select-options {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        height: 0;
-        transform-style: preserve-3d;
-        margin: 0 auto;
-        margin-left: 20%;
-        text-align: left;
-        display: block;
-        transform: translateZ(-150px) rotateX(0deg);
-        -webkit-font-smoothing: subpixel-antialiased;
-        color: #666;
-        .select-option {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 50px;
+.select-options {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transform-style: preserve-3d;
+    margin: 0 auto;
+    margin-left: 20%;
+    text-align: left;
+    display: block;
+    transform: translateZ(-150px) rotateX(0deg);
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: #666;
+}
+.select-option {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
 
-            -webkit-font-smoothing: subpixel-antialiased;
-        }
-    }
-
+.user-select {
     user-select: none;
 }
 
@@ -63,8 +64,6 @@
     border-bottom: 1px solid #333;
     font-size: 24px;
     overflow: hidden;
-
-    user-select: none;
 }
 
 .highlight-list {
@@ -96,16 +95,16 @@
     justify-content: space-between;
     width: 400px;
     height: 800px;
+}
 
-    >div {
-        flex: 1;
-    }
+.break-selector > div {
+    flex: 1;
+}
 
-    .select-wrap {
-        font-size: 80px;
-    }
+.break-selector .select-wrap {
+    font-size: 80px;
+}
 
-    .highlight {
-        font-size: 100px;
-    }
+.break-selector .highlight {
+    font-size: 100px;
 }
