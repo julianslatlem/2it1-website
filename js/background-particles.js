@@ -74,6 +74,9 @@ particlesJS('particles-js',
                     "enable": true,
                     "mode": "bubble"
                 },
+                "onclick": {
+                    "enable": false,
+                },
                 "resize": true
             },
             "modes": {
