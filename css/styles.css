@@ -67,6 +67,25 @@ body {
     font-size: 1.5rem;
 }
 
+.schedule-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.schedule-title {
+    font-size: 3rem;
+    margin-left: 5%;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.schedule-text {
+    font-size: 1.5rem;
+    margin-left: 5%;
+}
+
 ::-webkit-scrollbar {
     width: 15px;
 }
