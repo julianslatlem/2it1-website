@@ -4,6 +4,8 @@
     margin-right: auto;
     margin-top: 5%;
     overflow: hidden;
+    z-index: 200000000;
+    position: relative;
 }
 
 .schedule-title {
