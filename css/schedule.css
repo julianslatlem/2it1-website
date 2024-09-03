@@ -1,0 +1,34 @@
+.schedule-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.schedule-title {
+    font-size: 3rem;
+    margin-left: 5%;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.schedule-text {
+    font-size: 1.5rem;
+    margin-left: 5%;
+}
+
+.classes-title {
+    font-size: 3rem;
+    margin-left: 5%;
+}
+
+.classes-names {
+    font-size: 1.5rem;
+    margin-left: 5%;
+}
+
+.classes-text {
+    font-size: 1.3rem;
+    margin-left: 7%;
+}

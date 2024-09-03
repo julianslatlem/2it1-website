@@ -10,12 +10,116 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
-<body style="height: 200vh">
+<body>
     <nav class="navbar">
         <ul class="navbar-menu">
             <li class="navbar-item"><a href="home.html" class="navbar-link">Hjem</a></li>
+            <li class="navbar-item"><a href="schedule.html" class="navbar-link">Timeplan</a></li>
             <li class="navbar-item"><a href="contact.html" class="navbar-link">Kontakt</a></li>
         </ul>
     </nav>
+
+    <div id="particles-js" style="height: 235vh"></div>
+
+    <section class="contact-section">
+        <h1 class="contact-title">Kontakt oss</h1>
+
+        <section class="people-section">
+            <div class="person" data-email="lisbeth.sandvik@mrfylke.no">
+                <img src="../assets/images/lisbeth.png" alt="Person 2" class="person-image">
+                <div class="person-info">
+                    <h3 class="person-name">Lisbeth Sandvik</h3>
+                    <p class="person-email">lisbeth.sandvik@mrfylke.no</p>
+                    <p class="job-description">Avdelingsleder</p>
+                </div>
+            </div>
+            <div class="person" data-email="oystein.hansen@mrfylke.no">
+                <img src="../assets/images/oystein.png" alt="Person 2" class="person-image">
+                <div class="person-info">
+                    <h3 class="person-name">Øystein Hansen</h3>
+                    <p class="person-email">oystein.hansen@mrfylke.no</p>
+                    <p class="job-description">Kontaktlærer</p>
+                </div>
+            </div>
+            <div class="person" data-email="gunilla.ryman@mrfylke.no">
+                <img src="../assets/images/gunilla.png" alt="Person 1" class="person-image">
+                <div class="person-info">
+                    <h3 class="person-name">Gunilla Ryman</h3>
+                    <p class="person-email">gunilla.ryman@mrfylke.no</p>
+                    <p class="job-description">Rådgiver</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="contact-section">
+        <h1 class="contact-title">Møt lærerene</h1>
+        <section class="people-section">
+            <div class="person" data-email="oystein.hansen@mrfylke.no">
+                <img src="../assets/images/oystein.png" alt="Person 2" class="person-image">
+                <div class="person-info">
+                    <h3 class="person-name">Øystein Hansen</h3>
+                    <p class="person-email">oystein.hansen@mrfylke.no</p>
+                    <p class="job-description">Driftstøtte &nbsp; YFF &nbsp; Kroppsøvning</p>
+                </div>
+            </div>
+            <div class="person" data-email="alf.helge.fevaag@mrfylke.no">
+                <img src="../assets/images/alf.png" alt="Person 2" class="person-image">
+                <div class="person-info">
+                    <h3 class="person-name">Alf Helge Fevaag</h3>
+                    <p class="person-email">alf.helge.fevaag@mrfylke.no</p>
+                    <p class="job-description">Brukerstøtte</p>
+                </div>
+            </div>
+            <div class="person" data-email="jorn.kanestrom@mrfylke.no">
+                <img src="../assets/images/jorn.png" alt="Person 2" class="person-image">
+                <div class="person-info">
+                    <h3 class="person-name">Jørn Kanestrøm</h3>
+                    <p class="person-email">jorn.kanestrom@mrfylke.no</p>
+                    <p class="job-description">Utvikling</p>
+                </div>
+            </div>
+            <div class="person" data-email="torsten.conrads@mrfylke.no">
+                <img src="../assets/images/torsten.png" alt="Person 2" class="person-image">
+                <div class="person-info">
+                    <h3 class="person-name">Torsten Conrads</h3>
+                    <p class="person-email">torsten.conrads@mrfylke.no</p>
+                    <p class="job-description">Utvikling</p>
+                </div>
+            </div>
+            <div class="person" data-email="julie.antonsen@mrfylke.no">
+                <img src="../assets/images/julie.png" alt="Person 2" class="person-image">
+                <div class="person-info">
+                    <h3 class="person-name">Julie Antonsen</h3>
+                    <p class="person-email">julie.antonsen@mrfylke.no</p>
+                    <p class="job-description">Norsk</p>
+                </div>
+            </div>
+            <div class="person" data-email="ann.elin.bjerkestrand@mrfylke.no">
+                <img src="../assets/images/ann.png" alt="Person 2" class="person-image">
+                <div class="person-info">
+                    <h3 class="person-name">Ann Elin Bjerkestrand</h3>
+                    <p class="person-email">ann.elin.bjerkestrand@mrfylke.no</p>
+                    <p class="job-description">Samfunnskunnskap</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="../js/particles.js"></script>
+    <script src="../js/background-particles.js"></script>
+    <script src="../js/vanilla-tilt.js"></script>
+    <script src="../js/tilt.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const persons = document.querySelectorAll(".person");
+            persons.forEach(person => {
+                person.addEventListener("click", function() {
+                    const email = person.getAttribute("data-email");
+                    window.location.href = `mailto:${email}`;
+                });
+            });
+        });
+    </script>
 </body>
 </html>

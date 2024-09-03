@@ -8,10 +8,30 @@ body {
 
 .hero {
     min-height: 130vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(11, 12, 21)), url('../assets/images/hero.jpg') no-repeat center center;
-    background-size: cover;
-    position: relative;
+    position: static;
     overflow: hidden;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    mask: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
 }
 
 .hero-title {
@@ -19,6 +39,8 @@ body {
     margin-top: 20%;
     margin-left: 5%;
     padding: 0;
+    z-index: 200;
+    position: relative;
 }
 
 .typed-cursor {
@@ -90,5 +112,71 @@ body {
     position: absolute;
     width: 100%;
     height: 450vh;
-    z-index: 0;
+    z-index: 50;
+}
+
+.contact-section {
+    text-align: center;
+    height: 100vh;
+    padding-top: 8%;
+}
+
+.contact-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.people-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.person {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+    margin: 1rem 0;
+    background-color: #1c1c24;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.person img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.person h3 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.person p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.person .job-description {
+    font-size: 1.2rem;
+    color: #b8b9c3;
+    text-align: center;
 }
