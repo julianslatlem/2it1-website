@@ -144,6 +144,8 @@ body {
     border-radius: 8px;
     cursor: pointer;
     z-index: 200;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 
 .person-info {
@@ -154,6 +156,8 @@ body {
     width: 100%;
     text-align: left;
     padding-left: 3rem;
+    transform: translateZ(40px);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 .person img {
@@ -163,6 +167,7 @@ body {
     margin-bottom: 1rem;
     margin-left: 2rem;
     margin-top: 1rem;
+    transform: translateZ(30px);
 }
 
 .person h3 {
