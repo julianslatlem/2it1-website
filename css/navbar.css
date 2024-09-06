@@ -23,12 +23,21 @@ ul, li {
     margin: 0 3rem;
 }
 
+#here {
+    color: rgb(82, 82, 195);
+}
+
 .navbar-link {
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
     position: relative;
     padding-bottom: 0.5rem;
+}
+
+.navbar-link:hover {
+    transition: width 0.3 ease-in;
+    color: rgb(82, 82, 195);
 }
 
 .navbar-link::after {
@@ -39,7 +48,7 @@ ul, li {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: #fff;
+    background: rgb(82, 82, 195);
     transition: width 0.3s ease;
     -webkit-transition: width 0.3s ease;
 }
@@ -47,5 +56,5 @@ ul, li {
 .navbar-link:hover::after {
     width: 100%;
     left: 0;
-    background: #fff;
+    background: rgb(82, 82, 195);
 }
