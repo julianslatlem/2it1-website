@@ -1,11 +1,16 @@
+body {
+    height: fit-content;
+}
+
 .schedule-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
     overflow: hidden;
-    z-index: 200000000;
+    z-index: 50;
     position: relative;
+    width: 90%;
 }
 
 .schedule-title {
