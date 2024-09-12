@@ -50,3 +50,9 @@ ul, li {
     left: 0;
     background: #fff;
 }
+
+.navbar-link.current-page::after {
+    width: 100%;
+    left: 0;
+    background: #fff;
+}
