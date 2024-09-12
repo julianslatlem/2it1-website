@@ -428,10 +428,10 @@ document.querySelector("#break1").addEventListener("wheel", function(event) {
 
 const countdown = document.getElementById("countdown");
 const breakDates = {
-    0: "2024-10-01T00:00:00",
-    1: "2024-12-24T00:00:00",
-    2: "2025-02-15T00:00:00",
-    3: "2025-04-10T00:00:00",
+    0: "2024-10-04T00:00:00",
+    1: "2024-12-20T00:00:00",
+    2: "2025-02-14T00:00:00",
+    3: "2025-04-11T00:00:00",
     4: "2025-06-20T00:00:00"
 };
 let endDate = new Date(breakDates[0]).getTime();
