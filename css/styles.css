@@ -63,9 +63,12 @@ body {
     height: 200vh;
 }
 
+.spacer {
+    height: 60vh;
+}
+
 .info-section {
     text-align: right;
-    height: 100vh;
 }
 
 .info-title {
@@ -79,7 +82,6 @@ body {
 
 .countdown-section {
     text-align: left;
-    height: 100vh;
     margin-bottom: 5%;
 }
 
@@ -94,7 +96,22 @@ body {
 
 .advisor-section{
 	text-align: right;
-    height: 100vh;
+    display: flex;
+}
+
+.advisor-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.advisor-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
 }
 
 .advisor-title {
@@ -102,18 +119,15 @@ body {
     margin-bottom: 1rem;
 }
 
-.advisor-person img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    margin-left: 2rem;
-    margin-top: 1rem;
-    transform: translateZ(30px);
+.advisor-text {
+    font-size: 1.5rem;
 }
 
-.advisor-img {
+.advisor-schedule {
 	width: 100vh;
+    position: relative;
+    z-index: 50;
+    user-select: none;
 }
 
 .people-title {
@@ -149,7 +163,6 @@ body {
 
 .contact-section {
     text-align: center;
-    height: 100vh;
     padding-top: 8%;
 }
 
