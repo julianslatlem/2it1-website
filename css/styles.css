@@ -144,6 +144,7 @@ body {
     position: absolute;
     width: 100%;
     z-index: 50;
+    top: 0;
 }
 
 .contact-section {
