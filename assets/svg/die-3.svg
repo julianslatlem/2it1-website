@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="120"
+   height="120"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="die-3.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="10.083333"
+     inkscape:cx="59.950413"
+     inkscape:cy="60"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <g
+     id="g1">
+    <title
+       id="title1">Layer 1</title>
+    <rect
+       fill="#ffffff"
+       stroke="#000"
+       x="0.08647"
+       y="-0.31432"
+       width="120"
+       height="120"
+       id="svg_1"
+       rx="15" />
+    <rect
+       fill="#fff"
+       stroke="#000"
+       x="409.08471"
+       y="335.52292"
+       width="0.61457"
+       height="0"
+       id="svg_15" />
+    <rect
+       fill="#fff"
+       stroke="#000"
+       x="408.47013"
+       y="335.52292"
+       width="0.61457"
+       height="0"
+       id="svg_16" />
+    <g
+       stroke-width="0"
+       id="svg_3"
+       transform="translate(-0.25904139,-3.25272)">
+      <path
+         fill="#510606"
+         stroke="#000000"
+         opacity="undefined"
+         d="m 60.32835,75.12221 c -6.35359,0 -11.5,-5.14641 -11.5,-11.5 0,-6.35359 5.14641,-11.5 11.5,-11.5 6.35359,0 11.5,5.14641 11.5,11.5 0,6.35359 -5.14641,11.5 -11.5,11.5 z"
+         id="svg_2" />
+      <path
+         fill="#510606"
+         stroke="#000000"
+         opacity="undefined"
+         d="m 27.93493,111.26767 c -6.35359,0 -11.5,-5.14641 -11.5,-11.5 0,-6.35359 5.14641,-11.5 11.5,-11.5 6.35359,0 11.5,5.14641 11.5,11.5 0,3.1768 -1.2866,6.0518 -3.3674,8.1326 -2.0808,2.0808 -4.9558,3.3674 -8.1326,3.3674 z"
+         id="svg_9" />
+      <circle
+         fill="#510606"
+         stroke="#000000"
+         cx="92.583153"
+         cy="26.73777"
+         id="svg_10"
+         r="11.5" />
+    </g>
+  </g>
+</svg>
