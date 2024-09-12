@@ -1,0 +1,74 @@
+.subjects-content {
+    text-align: center;
+    padding-top: 8%;
+}
+
+.subjects-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.subjects-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.subject {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    min-width: 1050px;
+    max-width: 1100px;
+    margin: 1rem 0;
+    background-color: #1c1c24;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 200;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+.subject-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding-left: 3rem;
+    transform: translateZ(40px);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.subject-name {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.subject-teacher {
+    font-size: 1.2rem;
+    color: #b8b9c3;
+    margin-top: -5px;
+}
+
+.subject-description {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.subject-hours {
+    font-size: 1.2rem;
+    color: #b8b9c3;
+    margin: 5px 0;
+}
+
+.subject-score {
+    max-width: 15%;
+    height: auto;
+    padding-left: 2.5rem;
+    transform: translateZ(30px);
+}
