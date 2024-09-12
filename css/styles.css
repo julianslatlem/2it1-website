@@ -131,6 +131,31 @@ body {
     margin: auto;
 }
 
+.schedule-section {
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.schedule {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 2rem;
+    max-width: 100%;
+    z-index: 50;
+}
+
+.schedule-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.schedule-text {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 .people-title {
     font-size: 3rem;
     margin-bottom: 1rem;
