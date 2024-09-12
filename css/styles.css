@@ -32,6 +32,7 @@ body {
     left: 0;
     z-index: 100;
     mask: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+    user-select: none;
 }
 
 .hero-title {
@@ -41,6 +42,7 @@ body {
     padding: 0;
     z-index: 200;
     position: relative;
+    user-select: none;
 }
 
 .typed-cursor {
@@ -100,21 +102,6 @@ body {
     margin-bottom: 1rem;
 }
 
-.advisor-person {
-	position: relative;
-	left: 102vh;
-	display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 40%;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 8px;
-    z-index: 200;
-	font-size: 2rem;
-    margin: 0.5rem 0;
-}
-
 .advisor-person img {
     width: 100px;
     height: 100px;
@@ -156,7 +143,6 @@ body {
 #particles-js {
     position: absolute;
     width: 100%;
-
     z-index: 50;
 }
 
