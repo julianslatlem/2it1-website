@@ -124,10 +124,11 @@ body {
 }
 
 .advisor-schedule {
-	width: 100vh;
+	width: 100%;
     position: relative;
     z-index: 50;
     user-select: none;
+    margin: auto;
 }
 
 .people-title {
