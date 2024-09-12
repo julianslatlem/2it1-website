@@ -21,7 +21,7 @@
         </ul>
     </nav>
 
-    <div id="particles-js"></div>
+    <div id="particles-js" style="height: 580vh;"></div>
 
     <section class="hero">
         <div class="image-container">
@@ -42,9 +42,10 @@
                 <br>
                 Det er også et fantastisk miljø å møte nye mennesker i,<br>
                 de på informasjonsteknologi er ikke så reserverte som du skulle trodd.
-
             </p>
         </section>
+
+        <div class="spacer"></div>
 
         <section class="countdown-section">
             <h2 class="countdown-title">Hvor lenge igjen til neste ferie?</h2>
@@ -57,18 +58,88 @@
                 <div class="countdown" id="countdown">00:00:00:00</div>
             </div>
         </section>
+
+        <div class="spacer"></div>
+
+        <section class="advisor-section">
+            <div class="advisor-left">
+                <img src="../assets/images/advisor-schedule.jpg" class="advisor-schedule">
+            </div>
+
+            <div class="advisor-right">
+                <h2 class="advisor-title">Trenger du noen råd?</h2>
+                <p class="advisor-text">Rådgiver er tilgjengelig de fleste dager, og kan gi råd om<br>studievalg, karriereplanlegging, og personlig utvikling.<br>Ta kontakt for å avtale en tid som passer for deg.</p>
+
+                <section class="people-section" style="align-items: flex-end; width: auto; padding: 0">
+                    <div class="person" style="width: auto; margin-left: auto" data-email="gunilla.ryman@mrfylke.no">
+                        <img src="../assets/images/gunilla.png" alt="Person 1" class="person-image">
+                        <div class="person-info">
+                            <h3 class="person-name">Gunilla Ryman</h3>
+                            <p class="person-email">gunilla.ryman@mrfylke.no</p>
+                            <p class="job-description">Rådgiver</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+
+        <section class="people-section">
+            <h2 class="people-title">Ønsker du å ta kontakt?</h2>
+
+            <section class="people-section">
+                <div class="person" data-email="lisbeth.sandvik@mrfylke.no">
+                    <img src="../assets/images/lisbeth.png" alt="Person 2" class="person-image">
+                    <div class="person-info">
+                        <h3 class="person-name">Lisbeth Sandvik</h3>
+                        <p class="person-email">lisbeth.sandvik@mrfylke.no</p>
+                        <p class="job-description">Avdelingsleder</p>
+                    </div>
+                </div>
+                <div class="person" data-email="oystein.hansen@mrfylke.no">
+                    <img src="../assets/images/oystein.png" alt="Person 2" class="person-image">
+                    <div class="person-info">
+                        <h3 class="person-name">Øystein Hansen</h3>
+                        <p class="person-email">oystein.hansen@mrfylke.no</p>
+                        <p class="job-description">Kontaktlærer</p>
+                    </div>
+                </div>
+                <div class="person" data-email="gunilla.ryman@mrfylke.no">
+                    <img src="../assets/images/gunilla.png" alt="Person 1" class="person-image">
+                    <div class="person-info">
+                        <h3 class="person-name">Gunilla Ryman</h3>
+                        <p class="person-email">gunilla.ryman@mrfylke.no</p>
+                        <p class="job-description">Rådgiver</p>
+                    </div>
+                </div>
+            </section>
+        </section>
     </section>
+
+    <div class="container" style="margin-top: 40vh">
+        <footer>
+            <p>Copyright Ⓒ Teknisk Sett UB 2024 — All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="../js/typing.js"></script>
     <script src="../js/countdown.js"></script>
     <script src="../js/particles.js"></script>
     <script src="../js/background-particles.js"></script>
-
-    <div class="container">
-        <footer>
-            <p>©Teknisk Sett UB 2024 &nbsp All rights reserved.</p>
-        </footer>
-    </div>
+    <script src="../js/vanilla-tilt.js"></script>
+    <script src="../js/tilt.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const persons = document.querySelectorAll(".person");
+            persons.forEach(person => {
+                person.addEventListener("click", function() {
+                    const email = person.getAttribute("data-email");
+                    window.location.href = `mailto:${email}`;
+                });
+            });
+        });
+    </script>
 </body>
 </html>

@@ -12,6 +12,7 @@ ul, li {
     top: 0;
     left: 0;
     z-index: 1000;
+    user-select: none;
 }
 
 .navbar-menu {
